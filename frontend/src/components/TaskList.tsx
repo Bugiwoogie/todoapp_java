@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Task } from '../types/Task';
 
-const TaskList: React.FC = (all_tasks) => {
+const TaskList: React.FC = () => {
     const [tasks, setTasks] = useState<Task[]>([]);
 
     useEffect(() => {
